@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Reservations | Savanna Brew Café</title>
+  <meta name="description" content="Savanna Brew Café, Westlands, Nairobi. Brewed in Kenya. Served with love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Savanna Brew Café logo" width="200" height="60"></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container section">
+      <h1>Contact &amp; Reservations</h1>
+      <div class="contact-grid">
+        <section aria-labelledby="form-title" class="form-col">
+          <h2 id="form-title">Reserve a table or send an enquiry</h2>
+          <form action="#" method="post">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+254 7XX XXX XXX">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="field">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="guests">Number of guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <fieldset>
+              <legend>Occasion</legend>
+              <label class="radio" for="casual"><input type="radio" id="casual" name="occasion" value="casual" checked> Casual</label>
+              <label class="radio" for="birthday"><input type="radio" id="birthday" name="occasion" value="birthday"> Birthday</label>
+              <label class="radio" for="business"><input type="radio" id="business" name="occasion" value="business"> Business</label>
+            </fieldset>
+            <div class="field">
+              <label for="requests">Special requests</label>
+              <textarea id="requests" name="requests" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Send reservation</button>
+          </form>
+        </section>
+
+        <aside class="info-col" aria-label="Café information">
+          <section>
+            <h2>Find us</h2>
+            <ul class="contact-list">
+              <li><strong>Address:</strong> 14 Coffee Lane, Westlands, Nairobi</li>
+              <li><strong>Phone:</strong> <a href="tel:+254700123456">+254 700 123 456</a></li>
+              <li><strong>Email:</strong> <a href="mailto:hello@savannabrew.example">hello@savannabrew.example</a></li>
+              <li><strong>Social:</strong> <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram @savannabrew</a>, <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook /savannabrewcafe</a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Opening hours</h2>
+            <div class="table-wrap">
+              <table class="menu-table">
+                <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Monday to Friday</th><td>7:00 AM to 9:00 PM</td></tr>
+                  <tr><th scope="row">Saturday</th><td>8:00 AM to 10:00 PM</td></tr>
+                  <tr><th scope="row">Sunday</th><td>9:00 AM to 6:00 PM</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section>
+            <h2>Map</h2>
+            <iframe class="map" title="Map of Westlands, Nairobi" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=36.795%2C-1.275%2C36.82%2C-1.255&amp;layer=mapnik"></iframe>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Visit us</h2>
+        <address>14 Coffee Lane<br>Westlands, Nairobi<br>+254 700 123 456</address>
+      </section>
+      <section>
+        <h2>Opening hours</h2>
+        <p>Mon to Fri: 7:00 AM to 9:00 PM<br>Sat: 8:00 AM to 10:00 PM<br>Sun: 9:00 AM to 6:00 PM</p>
+      </section>
+      <section>
+        <h2>Follow us</h2>
+        <ul class="social-list">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram @savannabrew</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook /savannabrewcafe</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="copyright">© 2026 Savanna Brew Café. All rights reserved.</p>
+  </footer>
+</body>
+</html>
